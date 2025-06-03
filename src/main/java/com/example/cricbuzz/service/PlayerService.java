@@ -41,7 +41,7 @@ public class PlayerService {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom("classroom.management09@gmail.com");
         message.setTo(player.getEmail());
-        message.setSubject("Congrats!! You have been registered");
+        message.setSubject("Congrats! You have been registered");
         message.setText(text);
 
         javaMailSender.send(message);
